@@ -1,0 +1,122 @@
+// saved by AuroraGT v0.1.0.9 (SpriteEditor v0.1.0.9)
+////////////////////////////////////////////////////////////////////////////////
+/*SPRITE*/ {
+
+    VERSION 0001
+
+    // Images:  1
+    // Modules: 6
+    // Frames:  4
+    // Anims:   2
+
+////////////////////////////////////////////////////////////////////////////////
+// Images...
+// <Image> := IMAGE [id] "file" [ALPHA "alpha_file"] [TRANSP transp_color]
+
+    IMAGE 0x0000 ".\accelerator.png" TRANSP 0x00FF00FF // 0  size: 187 x 251  palettes: 1
+
+////////////////////////////////////////////////////////////////////////////////
+// Modules...
+// <Modules> := MODULES { <MD1> <MD2> ... }
+// <MDi>     := MD id Type [params] ["desc"]
+// Type      := MD_IMAGE | MD_RECT | ...
+// [params]  := if (Type == MD_IMAGE)     -> image x y width height
+//              if (Type == MD_RECT)      -> color width height
+//              if (Type == MD_FILL_RECT) -> color width height
+//              if (Type == MD_ARC)       -> color width height startAngle arcAngle
+//              if (Type == MD_FILL_ARC)  -> color width height startAngle arcAngle
+//              if (Type == MD_MARKER)    -> color width height
+//              if (Type == MD_TRIANGLE)  -> color p2X p2Y p3X p3Y
+//              if (Type == MD_FILL_TRIANGLE)  -> color p2X p2Y p3X p3Y
+//              if (Type == MD_LINE)	   -> color width height
+//              if (Type == MD_FILL_RECT_GRAD) -> color01 color02 direction width height
+
+    MODULES
+    {
+        MD	0x10F8	MD_IMAGE	0	46	20	34	14
+        MD	0x10FD	MD_IMAGE	0	46	100	34	16
+        MD	0x10FF	MD_IMAGE	0	59	116	21	10
+        MD	0x1102	MD_IMAGE	0	46	137	34	17
+        MD	0x1109	MD_IMAGE	0	46	180	34	16
+        MD	0x1137	MD_IMAGE	0	46	215	18	31
+    }
+
+////////////////////////////////////////////////////////////////////////////////
+// Frames...
+// <Frame> := FRAME ["desc"] { id <RC1> [<RC2> ...] <FM1> [<FM2> ...] }
+// <RCi>   := RC x1 y1 x2 y2
+// <FMi>   := FM module_or_frame_id ox oy [FLAGS hex_flags] [+Flags]
+// Flags   := HYPER_FM | FLIP_X | FLIP_Y | ROT_90 | FREE_ROT
+
+    FRAME "" // Index = 0, FModules = 4
+    {
+        0x20A2
+        RC	-27	-12	26	-4
+        FM	0x1137	-37	-17
+        FM	0x1137	19	-17	+FLIP_X
+        FM	0x10F8	-34	-15
+        FM	0x10F8	0	-15	+FLIP_X
+    }
+
+    FRAME "" // Index = 1, FModules = 6
+    {
+        0x20A4
+        RC	-28	-10	25	6
+        FM	0x1137	-37	-17
+        FM	0x1137	19	-17	+FLIP_X
+        FM	0x10FD	-34	-15
+        FM	0x10FF	-21	1
+        FM	0x10FD	0	-15	+FLIP_X
+        FM	0x10FF	0	1	+FLIP_X
+    }
+
+    FRAME "" // Index = 2, FModules = 4
+    {
+        0x20A5
+        RC	-29	-18	26	-3
+        FM	0x1137	-37	-17
+        FM	0x1137	19	-17	+FLIP_X
+        FM	0x1102	-34	-18
+        FM	0x1102	0	-18	+FLIP_X
+    }
+
+    FRAME "" // Index = 3, FModules = 4
+    {
+        0x20A6
+        RC	-27	-12	27	-2
+        FM	0x1137	-37	-17
+        FM	0x1137	19	-17	+FLIP_X
+        FM	0x1109	-34	-15
+        FM	0x1109	0	-15	+FLIP_X
+    }
+
+////////////////////////////////////////////////////////////////////////////////
+// Animations...
+// <Anim> := ANIM ["desc"] { id [<AF1> <AF2> ...] }
+// <AFi>  := AF frame_id time ox oy [FLAGS hex_flags] [+Flags]
+// Flags  := FLIP_X | FLIP_Y | ROT_90
+
+    ANIM "bed" // Index = 0, AFrames = 1
+    {
+        0x3096
+        AF	0x20A2	1	0	0
+    }
+
+    ANIM "bed_up" // Index = 1, AFrames = 9
+    {
+        0x3000
+        AF	0x20A2	1	0	0
+        AF	0x20A4	3	0	0
+        AF	0x20A5	1	0	0
+        AF	0x20A6	1	0	0
+        AF	0x20A2	1	0	0
+        AF	0x20A6	1	0	0
+        AF	0x20A2	1	0	0
+        AF	0x20A6	1	0	0
+        AF	0x20A2	1	0	0
+    }
+
+    SPRITE_END
+
+} // SPRITE
+////////////////////////////////////////////////////////////////////////////////

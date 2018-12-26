@@ -1,0 +1,22 @@
+// Saved by AuroraGT v0.1.0.9
+////////////////////////////////////////////////////////////////////////////////
+
+"AS3.game"
+{
+    FLAGS 0x00000000
+
+    LOAD_TEMPLATES "AS3.gts"
+
+    CAMERA "Camera 1"
+    {
+        FLAGS 0x00000000
+        POS 3758 80
+        SIZE 240 320
+        LIMIT_AREA 0 0 240 320
+        FILL_COLOR 128 128 128 128
+        HIDE_TOP 0
+        HIDE_BOTTOM 0
+    }
+
+    LOAD_LEVEL ".\level_02.level"
+}
