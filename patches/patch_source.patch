@@ -1,0 +1,13 @@
+Index: Utils.cpp
+===================================================================
+--- Utils.cpp	(revision 48)
++++ Utils.cpp	(working copy)
+@@ -3,7 +3,7 @@
+ #include <math.h>
+ #include <stdlib.h>
+ 
+-bool Utils::IsPointInRect(Vector2 point, Rect rect)
++bool Utils::IsPointInRectangle(Vector2 point, Rect rect)
+ {
+ 	return (point.x >= rect.position.x && point.x <= (rect.position.x + rect.size.x) 
+ 		 && point.y >= rect.position.y && point.y <= (rect.position.y + rect.size.y));		

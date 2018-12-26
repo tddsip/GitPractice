@@ -1,0 +1,484 @@
+// saved by AuroraGT v0.1.0.9 (SpriteEditor v0.1.0.9)
+////////////////////////////////////////////////////////////////////////////////
+/*SPRITE*/ {
+
+    VERSION 0001
+
+    // Images:  1
+    // Modules: 9
+    // Frames:  23
+    // Anims:   9
+
+////////////////////////////////////////////////////////////////////////////////
+// Images...
+// <Image> := IMAGE [id] "file" [ALPHA "alpha_file"] [TRANSP transp_color]
+
+    IMAGE 0x0000 ".\aim.png" TRANSP 0x00FF00FF // 0  size: 65 x 62  palettes: 1
+
+////////////////////////////////////////////////////////////////////////////////
+// Modules...
+// <Modules> := MODULES { <MD1> <MD2> ... }
+// <MDi>     := MD id Type [params] ["desc"]
+// Type      := MD_IMAGE | MD_RECT | ...
+// [params]  := if (Type == MD_IMAGE)     -> image x y width height
+//              if (Type == MD_RECT)      -> color width height
+//              if (Type == MD_FILL_RECT) -> color width height
+//              if (Type == MD_ARC)       -> color width height startAngle arcAngle
+//              if (Type == MD_FILL_ARC)  -> color width height startAngle arcAngle
+//              if (Type == MD_MARKER)    -> color width height
+//              if (Type == MD_TRIANGLE)  -> color p2X p2Y p3X p3Y
+//              if (Type == MD_FILL_TRIANGLE)  -> color p2X p2Y p3X p3Y
+//              if (Type == MD_LINE)	   -> color width height
+//              if (Type == MD_FILL_RECT_GRAD) -> color01 color02 direction width height
+
+    MODULES
+    {
+        MD	0x1002	MD_IMAGE	0	26	42	5	5
+        MD	0x1001	MD_IMAGE	0	36	33	3	17
+        MD	0x1000	MD_IMAGE	0	25	5	13	13
+        MD	0x1012	MD_IMAGE	0	5	30	13	13
+        MD	0x100B	MD_IMAGE	0	6	5	13	13
+        MD	0x102A	MD_IMAGE	0	42	54	5	5
+        MD	0x1015	MD_IMAGE	0	50	50	5	5
+        MD	0x102B	MD_IMAGE	0	43	33	3	17
+        MD	0x1017	MD_IMAGE	0	51	30	3	17
+    }
+
+////////////////////////////////////////////////////////////////////////////////
+// Frames...
+// <Frame> := FRAME ["desc"] { id <RC1> [<RC2> ...] <FM1> [<FM2> ...] }
+// <RCi>   := RC x1 y1 x2 y2
+// <FMi>   := FM module_or_frame_id ox oy [FLAGS hex_flags] [+Flags]
+// Flags   := HYPER_FM | FLIP_X | FLIP_Y | ROT_90 | FREE_ROT
+
+    FRAME "" // Index = 0, FModules = 1
+    {
+        0x2031
+        FM	0x1015	0	0
+    }
+
+    FRAME "" // Index = 1, FModules = 9
+    {
+        0x203E
+        FM	0x1012	-26	13	+FLIP_Y
+        FM	0x1012	13	13	+FLIP_X	+FLIP_Y
+        FM	0x1012	-26	-26
+        FM	0x1012	13	-26	+FLIP_X
+        FM	0x1017	22	-1	+FLIP_Y	+ROT_90
+        FM	0x1017	-38	-1	+FLIP_Y	+ROT_90
+        FM	0x1017	-1	-38
+        FM	0x1017	-1	22
+        FM	0x1015	-2	-2
+    }
+
+    FRAME "" // Index = 2, FModules = 9
+    {
+        0x2000
+        FM	0x100B	-64	51	+FLIP_Y
+        FM	0x100B	51	51	+FLIP_X	+FLIP_Y
+        FM	0x100B	51	-64	+FLIP_X
+        FM	0x100B	-64	-64
+        FM	0x102B	-1	48
+        FM	0x102B	48	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x102B	-65	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x102B	-1	-65
+        FM	0x102A	-2	-2
+    }
+
+    FRAME "" // Index = 3, FModules = 9
+    {
+        0x2016
+        FM	0x100B	-59	46	+FLIP_Y
+        FM	0x100B	46	46	+FLIP_X	+FLIP_Y
+        FM	0x100B	46	-59	+FLIP_X
+        FM	0x100B	-59	-59
+        FM	0x102B	-1	41
+        FM	0x102B	42	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x102B	-59	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x102B	-1	-59
+        FM	0x102A	-2	-2
+    }
+
+    FRAME "" // Index = 4, FModules = 9
+    {
+        0x2017
+        FM	0x100B	-54	41	+FLIP_Y
+        FM	0x100B	41	41	+FLIP_X	+FLIP_Y
+        FM	0x100B	41	-54	+FLIP_X
+        FM	0x100B	-54	-54
+        FM	0x102B	-1	37
+        FM	0x102B	37	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x102B	-54	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x102B	-1	-54
+        FM	0x102A	-2	-2
+    }
+
+    FRAME "" // Index = 5, FModules = 9
+    {
+        0x2018
+        FM	0x100B	-48	31	+FLIP_Y
+        FM	0x100B	31	31	+FLIP_X	+FLIP_Y
+        FM	0x100B	31	-48	+FLIP_X
+        FM	0x100B	-48	-48
+        FM	0x102B	-1	33
+        FM	0x102B	32	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x102B	-49	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x102B	-1	-49
+        FM	0x102A	-2	-2
+    }
+
+    FRAME "" // Index = 6, FModules = 9
+    {
+        0x2019
+        FM	0x100B	-38	25	+FLIP_Y
+        FM	0x100B	25	25	+FLIP_X	+FLIP_Y
+        FM	0x100B	25	-38	+FLIP_X
+        FM	0x100B	-38	-38
+        FM	0x102B	-1	25
+        FM	0x102B	25	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x102B	-42	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x102B	-1	-42
+        FM	0x102A	-2	-2
+    }
+
+    FRAME "" // Index = 7, FModules = 9
+    {
+        0x201A
+        FM	0x100B	-25	12	+FLIP_Y
+        FM	0x100B	12	12	+FLIP_X	+FLIP_Y
+        FM	0x100B	12	-25	+FLIP_X
+        FM	0x100B	-25	-25
+        FM	0x102B	-1	16
+        FM	0x102B	16	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x102B	-33	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x102B	-1	-33
+        FM	0x102A	-2	-2
+    }
+
+    FRAME "" // Index = 8, FModules = 9
+    {
+        0x2001
+        FM	0x100B	-19	6	+FLIP_Y
+        FM	0x100B	7	6	+FLIP_X	+FLIP_Y
+        FM	0x100B	7	-19	+FLIP_X
+        FM	0x100B	-19	-19
+        FM	0x102B	-1	9
+        FM	0x102B	8	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x102B	-24	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x102B	-1	-25
+        FM	0x102A	-2	-2
+    }
+
+    FRAME "" // Index = 9, FModules = 9
+    {
+        0x2015
+        FM	0x1000	-14	2	+FLIP_Y
+        FM	0x1000	2	2	+FLIP_X	+FLIP_Y
+        FM	0x1000	2	-14	+FLIP_X
+        FM	0x1000	-14	-14
+        FM	0x1001	-19	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1001	3	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1001	-1	-19
+        FM	0x1001	-1	3
+        FM	0x1002	-2	-2
+    }
+
+    FRAME "" // Index = 10, FModules = 9
+    {
+        0x2011
+        FM	0x1015	-2	-2
+        FM	0x1017	-1	20
+        FM	0x1017	20	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-36	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-1	-36
+        FM	0x1012	-25	12	+FLIP_Y
+        FM	0x1012	12	12	+FLIP_X	+FLIP_Y
+        FM	0x1012	-25	-25
+        FM	0x1012	12	-25	+FLIP_X
+    }
+
+    FRAME "" // Index = 11, FModules = 9
+    {
+        0x2009
+        FM	0x1015	-2	-2
+        FM	0x1017	-1	18
+        FM	0x1017	18	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-34	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-1	-34
+        FM	0x1012	-23	11	+FLIP_Y
+        FM	0x1012	11	11	+FLIP_X	+FLIP_Y
+        FM	0x1012	-23	-23
+        FM	0x1012	11	-23	+FLIP_X
+    }
+
+    FRAME "" // Index = 12, FModules = 9
+    {
+        0x2012
+        FM	0x1015	-2	-2
+        FM	0x1017	-1	16
+        FM	0x1017	16	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-32	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-1	-32
+        FM	0x1012	-20	8	+FLIP_Y
+        FM	0x1012	8	8	+FLIP_X	+FLIP_Y
+        FM	0x1012	-20	-20
+        FM	0x1012	8	-20	+FLIP_X
+    }
+
+    FRAME "" // Index = 13, FModules = 9
+    {
+        0x200E
+        FM	0x1015	-2	-2
+        FM	0x1017	-1	14
+        FM	0x1017	14	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-30	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-1	-30
+        FM	0x1012	-18	6	+FLIP_Y
+        FM	0x1012	6	6	+FLIP_X	+FLIP_Y
+        FM	0x1012	-18	-18
+        FM	0x1012	6	-18	+FLIP_X
+    }
+
+    FRAME "" // Index = 14, FModules = 9
+    {
+        0x2008
+        FM	0x1015	-2	-2
+        FM	0x1017	-1	12
+        FM	0x1017	12	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-28	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-1	-28
+        FM	0x1012	-17	5	+FLIP_Y
+        FM	0x1012	5	5	+FLIP_X	+FLIP_Y
+        FM	0x1012	-17	-17
+        FM	0x1012	5	-17	+FLIP_X
+    }
+
+    FRAME "" // Index = 15, FModules = 9
+    {
+        0x200F
+        FM	0x1015	-2	-2
+        FM	0x1017	-1	11
+        FM	0x1017	11	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-27	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-1	-27
+        FM	0x1012	-20	8	+FLIP_Y
+        FM	0x1012	8	8	+FLIP_X	+FLIP_Y
+        FM	0x1012	-20	-20
+        FM	0x1012	8	-20	+FLIP_X
+    }
+
+    FRAME "" // Index = 16, FModules = 9
+    {
+        0x2013
+        FM	0x1015	-2	-2
+        FM	0x1017	-1	9
+        FM	0x1017	-1	-25
+        FM	0x1012	-19	7	+FLIP_Y
+        FM	0x1012	7	7	+FLIP_X	+FLIP_Y
+        FM	0x1012	-19	-19
+        FM	0x1012	7	-19	+FLIP_X
+        FM	0x1017	10	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-25	-1	+FLIP_X	+FLIP_Y	+ROT_90
+    }
+
+    FRAME "" // Index = 17, FModules = 9
+    {
+        0x2010
+        FM	0x1015	-2	-2
+        FM	0x1017	-1	8
+        FM	0x1017	-1	-24
+        FM	0x1012	-18	6	+FLIP_Y
+        FM	0x1012	6	6	+FLIP_X	+FLIP_Y
+        FM	0x1012	-18	-18
+        FM	0x1012	6	-18	+FLIP_X
+        FM	0x1017	8	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-24	-1	+FLIP_X	+FLIP_Y	+ROT_90
+    }
+
+    FRAME "" // Index = 18, FModules = 9
+    {
+        0x2014
+        FM	0x1015	-2	-2
+        FM	0x1017	-1	6
+        FM	0x1017	-1	-22
+        FM	0x1012	-17	5	+FLIP_Y
+        FM	0x1012	5	5	+FLIP_X	+FLIP_Y
+        FM	0x1012	-17	-17
+        FM	0x1012	5	-17	+FLIP_X
+        FM	0x1017	6	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-22	-1	+FLIP_X	+FLIP_Y	+ROT_90
+    }
+
+    FRAME "" // Index = 19, FModules = 9
+    {
+        0x200A
+        FM	0x1012	-16	4	+FLIP_Y
+        FM	0x1012	4	4	+FLIP_X	+FLIP_Y
+        FM	0x1012	-16	-16
+        FM	0x1012	4	-16	+FLIP_X
+        FM	0x1015	-2	-2
+        FM	0x1017	-1	5
+        FM	0x1017	-1	-21
+        FM	0x1017	5	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-21	-1	+FLIP_X	+FLIP_Y	+ROT_90
+    }
+
+    FRAME "" // Index = 20, FModules = 9
+    {
+        0x200D
+        RC	-28	-29	27	22
+        FM	0x1012	-15	3	+FLIP_Y
+        FM	0x1012	3	3	+FLIP_X	+FLIP_Y
+        FM	0x1012	-15	-15
+        FM	0x1012	3	-15	+FLIP_X
+        FM	0x1015	-2	-2
+        FM	0x1017	-1	4
+        FM	0x1017	-1	-20
+        FM	0x1017	4	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-20	-1	+FLIP_X	+FLIP_Y	+ROT_90
+    }
+
+    FRAME "" // Index = 21, FModules = 9
+    {
+        0x200B
+        RC	-28	-29	27	22
+        FM	0x1012	-14	2	+FLIP_Y
+        FM	0x1012	2	2	+FLIP_X	+FLIP_Y
+        FM	0x1012	-14	-14
+        FM	0x1012	2	-14	+FLIP_X
+        FM	0x1015	-2	-2
+        FM	0x1017	-1	-19
+        FM	0x1017	-1	3
+        FM	0x1017	3	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x1017	-19	-1	+FLIP_X	+FLIP_Y	+ROT_90
+    }
+
+    FRAME "" // Index = 22, FModules = 9
+    {
+        0x200C
+        RC	-27	-28	26	21
+        FM	0x102B	-1	3
+        FM	0x102B	-1	-19
+        FM	0x100B	-14	-14
+        FM	0x100B	2	-14	+FLIP_X
+        FM	0x100B	-14	2	+FLIP_Y
+        FM	0x100B	2	2	+FLIP_X	+FLIP_Y
+        FM	0x102A	-2	-2
+        FM	0x102B	3	-1	+FLIP_X	+FLIP_Y	+ROT_90
+        FM	0x102B	-19	-1	+FLIP_X	+FLIP_Y	+ROT_90
+    }
+
+////////////////////////////////////////////////////////////////////////////////
+// Animations...
+// <Anim> := ANIM ["desc"] { id [<AF1> <AF2> ...] }
+// <AFi>  := AF frame_id time ox oy [FLAGS hex_flags] [+Flags]
+// Flags  := FLIP_X | FLIP_Y | ROT_90
+
+    ANIM "aim1_locking" // Index = 0, AFrames = 4
+    {
+        0x3000
+        AF	0x203E	2	0	0
+        AF	0x2011	1	0	0
+        AF	0x2009	1	0	0
+        AF	0x2012	1	0	0
+    }
+
+    ANIM "aim1_locked" // Index = 1, AFrames = 16
+    {
+        0x3002
+        AF	0x2012	1	0	0
+        AF	0x200E	1	0	0
+        AF	0x2008	1	0	0
+        AF	0x2014	1	0	0
+        AF	0x200A	1	0	0
+        AF	0x200D	1	0	0
+        AF	0x200B	2	0	0
+        AF	0x200C	1	0	0
+        AF	0x200B	2	0	0
+        AF	0x200C	1	0	0
+        AF	0x200B	2	0	0
+        AF	0x200C	1	0	0
+        AF	0x200B	2	0	0
+        AF	0x200C	1	0	0
+        AF	0x200B	2	0	0
+        AF	0x200C	1	0	0
+    }
+
+    ANIM "aim1_locked_fly" // Index = 2, AFrames = 18
+    {
+        0x3001
+        AF	0x2012	1	0	0
+        AF	0x2008	1	0	0
+        AF	0x200F	1	0	0
+        AF	0x2010	1	0	0
+        AF	0x2014	1	0	0
+        AF	0x200D	1	0	0
+        AF	0x200B	2	0	0
+        AF	0x200C	1	0	0
+        AF	0x200B	2	0	0
+        AF	0x200C	1	0	0
+        AF	0x200B	2	0	0
+        AF	0x200C	1	0	0
+        AF	0x200B	2	0	0
+        AF	0x200C	1	0	0
+        AF	0x200B	2	0	0
+        AF	0x200C	1	0	0
+        AF	0x200B	2	0	0
+        AF	0x200C	1	0	0
+    }
+
+    ANIM "aim2_locking" // Index = 3, AFrames = 1
+    {
+        0x3004
+        AF	0x2031	1	0	0
+    }
+
+    ANIM "aim2_locked" // Index = 4, AFrames = 1
+    {
+        0x3005
+        AF	0x2031	1	0	0
+    }
+
+    ANIM "aim_far_enemy_locking" // Index = 5, AFrames = 1
+    {
+        0x3013
+        AF	0x2031	1	0	0
+    }
+
+    ANIM "aim_far_enemy_locked" // Index = 6, AFrames = 1
+    {
+        0x3014
+        AF	0x2031	1	0	0
+    }
+
+    ANIM "aim1_locking" // Index = 7, AFrames = 4
+    {
+        0x3006
+        AF	0x203E	2	0	0
+        AF	0x2011	1	0	0
+        AF	0x2009	1	0	0
+        AF	0x2012	1	0	0
+    }
+
+    ANIM "aim_mangonel" // Index = 8, AFrames = 13
+    {
+        0x3003
+        AF	0x2000	1	0	0
+        AF	0x2016	1	0	0
+        AF	0x2017	1	0	0
+        AF	0x2018	1	0	0
+        AF	0x2019	1	0	0
+        AF	0x201A	1	0	0
+        AF	0x2001	1	0	0
+        AF	0x200C	2	0	0
+        AF	0x2015	1	0	0
+        AF	0x200C	2	0	0
+        AF	0x2015	1	0	0
+        AF	0x200C	2	0	0
+        AF	0x2015	1	0	0
+    }
+
+    SPRITE_END
+
+} // SPRITE
+////////////////////////////////////////////////////////////////////////////////

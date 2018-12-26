@@ -1,0 +1,1793 @@
+// Saved by AuroraGT v0.1.0.9
+////////////////////////////////////////////////////////////////////////////////
+
+"gui.game"
+{
+    FLAGS 0x00000000
+
+    LOAD_TEMPLATES "gui.gts"
+
+    CAMERA "Camera 1"
+    {
+        FLAGS 0x00000000
+        POS 0 0
+        SIZE 240 320
+        LIMIT_AREA 0 0 704 416
+        FILL_COLOR 0 128 128 128
+        HIDE_TOP 14
+        HIDE_BOTTOM 14
+    }
+
+    LEVEL "Splash"
+    {
+        FLAGS 0x00000000
+        ID 2
+        POS 0 0
+        LAYER OBJECT_LAYER "GUI_GfxItem-1"
+        {
+             FLAGS 0x00000000
+             ID 1
+             POS 0 0
+             ANCHOR 2 0
+             TEMPLATE "GUI_GfxItem"
+             PARAMS 1="MENU_CURSOR" 120="splash" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1
+        }
+        LAYER OBJECT_LAYER "GUI_TextItem-3"
+        {
+             FLAGS 0x00000000
+             ID 3
+             POS 0 266
+             ANCHOR 13 0
+             TEMPLATE "GUI_TextItem"
+             PARAMS 240 20 0="Font Small" 5 1="Center" 1="Center" 0="FALSE" 0 0 0
+        }
+        LAYER OBJECT_LAYER "GUI_GfxItem-4"
+        {
+             FLAGS 0x00000000
+             ID 4
+             POS 79 211
+             ANCHOR 0 0
+             TEMPLATE "GUI_GfxItem"
+             PARAMS 6="MEDAL" 64 -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 200 -1
+        }
+    }
+
+    LEVEL "Generic Menu Backing"
+    {
+        FLAGS 0x00000000
+        ID 7
+        POS 0 0
+        LAYER OBJECT_LAYER "GUI_GfxItem-1"
+        {
+             FLAGS 0x00000000
+             ID 1
+             POS 0 0
+             ANCHOR 2 0
+             TEMPLATE "GUI_GfxItem"
+             PARAMS 1="MENU_CURSOR" 0 -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1
+        }
+        LAYER OBJECT_LAYER "GUI_TextItem-2"
+        {
+             FLAGS 0x00000000
+             ID 2
+             POS 1 74
+             ANCHOR 0 0
+             TEMPLATE "GUI_TextItem"
+             PARAMS 238 50 1="Font Big" 2 1="Center" 1="Center" 0="FALSE" 0 0 0
+        }
+        LAYER OBJECT_LAYER "assassins-3"
+        {
+             FLAGS 0x00000000
+             ID 3
+             POS 0 0
+             ANCHOR 0 0
+             TEMPLATE "GUI_GfxItem"
+             PARAMS 1="MENU_CURSOR" 118="assassins_creed" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1
+        }
+    }
+
+    LEVEL "Generic Menu"
+    {
+        FLAGS 0x00000000
+        ID 9
+        POS 0 0
+        LAYER DUMMY "Menu-7"
+        {
+            FLAGS 0x00000000
+            ID 7
+            POS 0 0
+            LAYER OBJECT_LAYER "GUI_Default_Menu-6"
+            {
+                 FLAGS 0x00000000
+                 ID 6
+                 POS 40 50
+                 ANCHOR 13 0
+                 TEMPLATE "GUI_Default_Menu"
+                 PARAMS 1="TRUE" 160 240 6 35 5 1="Center" 0="Top" 1="Center" 1="Center"
+            }
+        }
+    }
+
+    LEVEL "Generic Menu Items"
+    {
+        FLAGS 0x00000000
+        ID 6
+        POS 0 0
+        LAYER DUMMY "Buttons-4"
+        {
+            FLAGS 0x00000000
+            ID 4
+            POS 32 0
+            LAYER OBJECT_LAYER "GUI_ButtonDefault-5"
+            {
+                 FLAGS 0x00000000
+                 ID 5
+                 POS 363 77
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 1="MENU_CURSOR" 23="button01_default" 25="button01_blink" -1 0 -1 -1 -1 1="Font Big" 1 -1 -1 -1
+            }
+            LAYER OBJECT_LAYER "GUI_ButtonHighlighted-2"
+            {
+                 FLAGS 0x00000000
+                 ID 2
+                 POS 363 117
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 1="MENU_CURSOR" 24="button01_highlight" 25="button01_blink" -1 0 -1 -1 -1 1="Font Big" 0 -1 -1 -1
+            }
+            LAYER OBJECT_LAYER "GUI_ButtonDisabled-1"
+            {
+                 FLAGS 0x00000000
+                 ID 1
+                 POS 363 160
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 1="MENU_CURSOR" 24="button01_highlight" 25="button01_blink" -1 0 -1 -1 -1 1="Font Big" 2 -1 -1 -1
+            }
+            LAYER OBJECT_LAYER "GUI_ButtonIGP-3"
+            {
+                 FLAGS 0x00000000
+                 ID 3
+                 POS 363 205
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 1="MENU_CURSOR" 23="button01_default" 25="button01_blink" -1 0 -1 -1 -1 1="Font Big" 3 -1 -1 -1
+            }
+        }
+    }
+
+    LEVEL "On Off Menu"
+    {
+        FLAGS 0x00000000
+        ID 8
+        POS 0 0
+        LAYER DUMMY "Menu-6"
+        {
+            FLAGS 0x00000000
+            ID 6
+            POS 32 0
+            LAYER OBJECT_LAYER "GUI_Menu-7"
+            {
+                 FLAGS 0x00000000
+                 ID 7
+                 POS 40 80
+                 ANCHOR 13 0
+                 TEMPLATE "GUI_Default_Menu"
+                 PARAMS 1="TRUE" 160 160 2 35 5 1="Center" 1="Center" 1="Center" 1="Center"
+            }
+        }
+    }
+
+    LEVEL "Custom Menu"
+    {
+        FLAGS 0x00000000
+        ID 12
+        POS 0 0
+        LAYER LEVEL "Menu-10"
+        {
+            FLAGS 0x00000000
+            ID 10
+            POS 0 0
+            LAYER OBJECT_LAYER "Custom Menu-11"
+            {
+                 FLAGS 0x00000000
+                 ID 11
+                 POS 194 180
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_Custom_Menu"
+                 PARAMS 1="TRUE"
+            }
+        }
+        LAYER LEVEL "Menu Items-2"
+        {
+            FLAGS 0x00000000
+            ID 2
+            POS 0 0
+            LAYER OBJECT_LAYER "Menu Item 1-1"
+            {
+                 FLAGS 0x00000000
+                 ID 1
+                 POS 86 70
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 0="MENU_BUTTONS" 23 13 1 0 1 2 3 1="Font Big" 1 0 2 3
+            }
+            LAYER OBJECT_LAYER "Text Item 1-6"
+            {
+                 FLAGS 0x00000000
+                 ID 6
+                 POS 11 57
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_TextItem"
+                 PARAMS 150 30 0="Font Small" -1 1="Center" 1="Center" 0="FALSE" 0 0 0
+            }
+            LAYER OBJECT_LAYER "Menu Item 2-3"
+            {
+                 FLAGS 0x00000000
+                 ID 3
+                 POS 155 120
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 0="MENU_BUTTONS" 23 13 1 0 1 2 3 1="Font Big" 1 0 2 3
+            }
+            LAYER OBJECT_LAYER "Text Item 2-7"
+            {
+                 FLAGS 0x00000000
+                 ID 7
+                 POS 81 107
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_TextItem"
+                 PARAMS 150 30 0="Font Small" -1 1="Center" 1="Center" 0="FALSE" 0 0 0
+            }
+            LAYER OBJECT_LAYER "Menu Item 3-4"
+            {
+                 FLAGS 0x00000000
+                 ID 4
+                 POS 86 170
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 0="MENU_BUTTONS" 23 13 1 0 1 2 3 1="Font Big" 1 0 2 3
+            }
+            LAYER OBJECT_LAYER "Text Item 3-8"
+            {
+                 FLAGS 0x00000000
+                 ID 8
+                 POS 11 157
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_TextItem"
+                 PARAMS 150 30 0="Font Small" -1 1="Center" 1="Center" 0="FALSE" 0 0 0
+            }
+            LAYER OBJECT_LAYER "Menu Item 4-5"
+            {
+                 FLAGS 0x00000000
+                 ID 5
+                 POS 155 220
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 0="MENU_BUTTONS" 23 13 1 0 1 2 3 1="Font Big" 1 0 2 3
+            }
+            LAYER OBJECT_LAYER "Text Item 4-9"
+            {
+                 FLAGS 0x00000000
+                 ID 9
+                 POS 81 207
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_TextItem"
+                 PARAMS 150 30 0="Font Small" -1 1="Center" 1="Center" 0="FALSE" 0 0 0
+            }
+        }
+    }
+
+    LEVEL "Main Menu"
+    {
+        FLAGS 0x00000000
+        ID 14
+        POS 0 0
+        LAYER LEVEL "Menu-15"
+        {
+            FLAGS 0x00000000
+            ID 15
+            POS 0 0
+            LAYER OBJECT_LAYER "GUI_Custom_Menu-11"
+            {
+                 FLAGS 0x00000000
+                 ID 11
+                 POS 234 207
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_Custom_Menu"
+                 PARAMS 1="TRUE"
+            }
+        }
+        LAYER LEVEL "Menu items-2"
+        {
+            FLAGS 0x00000000
+            ID 2
+            POS 0 0
+            LAYER OBJECT_LAYER "Menu Item 1-3"
+            {
+                 FLAGS 0x00000000
+                 ID 3
+                 POS 88 146
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 1="MENU_CURSOR" 18="text_button_empty" 19="text_button_blink" 1="1_out" 0 1 2 3 1="Font Big" -1 2 2 4
+            }
+            LAYER OBJECT_LAYER "Text Item 1-16"
+            {
+                 FLAGS 0x00000000
+                 ID 16
+                 POS 91 145
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_TextItem"
+                 PARAMS 148 22 1="Font Big" 5 0="Left" 1="Center" 0="FALSE" 0 0 0
+            }
+            LAYER OBJECT_LAYER "Menu Item 1-4"
+            {
+                 FLAGS 0x00000000
+                 ID 4
+                 POS 110 177
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 1="MENU_CURSOR" 18="text_button_empty" 19="text_button_blink" 1="1_out" 0 1 2 3 1="Font Big" -1 2 2 4
+            }
+            LAYER OBJECT_LAYER "Text Item 1-5"
+            {
+                 FLAGS 0x00000000
+                 ID 5
+                 POS 113 176
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_TextItem"
+                 PARAMS 127 22 1="Font Big" 5 0="Left" 1="Center" 0="FALSE" 0 0 0
+            }
+            LAYER OBJECT_LAYER "Menu Item 1-6"
+            {
+                 FLAGS 0x00000000
+                 ID 6
+                 POS 120 208
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 1="MENU_CURSOR" 18="text_button_empty" 19="text_button_blink" 1="1_out" 0 1 2 3 1="Font Big" -1 2 2 4
+            }
+            LAYER OBJECT_LAYER "Text Item 1-7"
+            {
+                 FLAGS 0x00000000
+                 ID 7
+                 POS 123 207
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_TextItem"
+                 PARAMS 127 22 1="Font Big" 5 0="Left" 1="Center" 0="FALSE" 0 0 0
+            }
+            LAYER OBJECT_LAYER "Menu Item 1-8"
+            {
+                 FLAGS 0x00000000
+                 ID 8
+                 POS 122 239
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 1="MENU_CURSOR" 18="text_button_empty" 19="text_button_blink" 1="1_out" 0 1 2 3 1="Font Big" -1 2 2 4
+            }
+            LAYER OBJECT_LAYER "Text Item 1-9"
+            {
+                 FLAGS 0x00000000
+                 ID 9
+                 POS 125 238
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_TextItem"
+                 PARAMS 127 22 1="Font Big" 5 0="Left" 1="Center" 0="FALSE" 0 0 0
+            }
+            LAYER OBJECT_LAYER "Menu Item 1-10"
+            {
+                 FLAGS 0x00000000
+                 ID 10
+                 POS 125 270
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 1="MENU_CURSOR" 18="text_button_empty" 19="text_button_blink" 1="1_out" 0 1 2 3 1="Font Big" -1 2 2 4
+            }
+            LAYER OBJECT_LAYER "Text Item 1-13"
+            {
+                 FLAGS 0x00000000
+                 ID 13
+                 POS 128 269
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_TextItem"
+                 PARAMS 127 22 1="Font Big" 5 0="Left" 1="Center" 0="FALSE" 0 0 0
+            }
+            LAYER OBJECT_LAYER "GUI_GfxItem-12"
+            {
+                 FLAGS 0x00000000
+                 ID 12
+                 POS 120 129
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_GfxItem"
+                 PARAMS 1="MENU_CURSOR" -1 26="arrow_up" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1
+            }
+            LAYER OBJECT_LAYER "GUI_GfxItem-1"
+            {
+                 FLAGS 0x00000000
+                 ID 1
+                 POS 165 299
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_GfxItem"
+                 PARAMS 1="MENU_CURSOR" -1 28="arrow_down" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1
+            }
+        }
+    }
+
+    LEVEL "Yes No"
+    {
+        FLAGS 0x00000000
+        ID 3
+        POS 0 0
+        LAYER OBJECT_LAYER "GUI_FillRect-1"
+        {
+             FLAGS 0x00000000
+             ID 1
+             POS 0 0
+             ANCHOR 0 0
+             TEMPLATE "GUI_FillRect"
+             PARAMS 240 320 140 0 0 0 1="TRUE" 0="FALSE"
+        }
+        LAYER OBJECT_LAYER "inner_black-4"
+        {
+             FLAGS 0x00000000
+             ID 4
+             POS 0 94
+             ANCHOR 0 0
+             TEMPLATE "GUI_FillRect"
+             PARAMS 240 151 183 0 0 0 1="TRUE" 0="FALSE"
+        }
+        LAYER OBJECT_LAYER "write_line-2"
+        {
+             FLAGS 0x00000000
+             ID 2
+             POS 0 93
+             ANCHOR 0 0
+             TEMPLATE "GUI_FillRect"
+             PARAMS 240 1 255 255 255 255 1="TRUE" 0="FALSE"
+        }
+        LAYER OBJECT_LAYER "write_line-5"
+        {
+             FLAGS 0x00000000
+             ID 5
+             POS 0 245
+             ANCHOR 0 0
+             TEMPLATE "GUI_FillRect"
+             PARAMS 240 1 255 255 255 255 1="TRUE" 0="FALSE"
+        }
+    }
+
+    LEVEL "guild_city_select"
+    {
+        FLAGS 0x00000000
+        ID 6
+        POS 0 0
+        LAYER DUMMY "background_gfx-5"
+        {
+            FLAGS 0x00000000
+            ID 5
+            POS 0 0
+            LAYER OBJECT_LAYER "GUI_NewGfxItem-29"
+            {
+                 FLAGS 0x00000000
+                 ID 29
+                 POS 0 0
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 52="screen_select_city" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1 -1
+            }
+        }
+        LAYER DUMMY "background_text-23"
+        {
+            FLAGS 0x00000000
+            ID 23
+            POS 0 0
+            LAYER OBJECT_LAYER "city_name-12"
+            {
+                 FLAGS 0x00000000
+                 ID 12
+                 POS 1 105
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 182 26 2="Font Huge" -1 1="Center" 1="Center" 0="FALSE" 0 -300 0 -1 -1 -1 -1="city name"
+            }
+            LAYER OBJECT_LAYER "GUI_NewTextItem-30"
+            {
+                 FLAGS 0x00000000
+                 ID 30
+                 POS 1 1
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 156 22 0="Font Small" -1 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 -6="choose place"
+            }
+            LAYER OBJECT_LAYER "mission biref-28"
+            {
+                 FLAGS 0x00000000
+                 ID 28
+                 POS 30 150
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 180 140 0="Font Small" 2 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 -2="city description"
+            }
+        }
+        LAYER DUMMY "city select-7"
+        {
+            FLAGS 0x00000000
+            ID 7
+            POS 0 0
+            LAYER OBJECT_LAYER "city01-8"
+            {
+                 FLAGS 0x00000000
+                 ID 8
+                 POS 70 57
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 3="MENU 2 " 4 0="city_select" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1 74
+            }
+            LAYER OBJECT_LAYER "city02-32"
+            {
+                 FLAGS 0x00000000
+                 ID 32
+                 POS 119 77
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 3="MENU 2 " 4 0="city_select" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1 74
+            }
+            LAYER OBJECT_LAYER "city03-34"
+            {
+                 FLAGS 0x00000000
+                 ID 34
+                 POS 180 46
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 3="MENU 2 " 4 0="city_select" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1 74
+            }
+        }
+        LAYER DUMMY "missions gfx-14"
+        {
+            FLAGS 0x00000000
+            ID 14
+            POS 0 0
+            LAYER OBJECT_LAYER "mission01-15"
+            {
+                 FLAGS 0x00000000
+                 ID 15
+                 POS 17 154
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 3="MENU 2 " 9 13="mission_bar_blink" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "mission02-4"
+            {
+                 FLAGS 0x00000000
+                 ID 4
+                 POS 17 183
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 3="MENU 2 " 9 13="mission_bar_blink" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 50 300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "mission03-16"
+            {
+                 FLAGS 0x00000000
+                 ID 16
+                 POS 16 212
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 3="MENU 2 " 9 13="mission_bar_blink" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 100 300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "mission04-33"
+            {
+                 FLAGS 0x00000000
+                 ID 33
+                 POS 16 241
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 3="MENU 2 " 9 13="mission_bar_blink" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 150 300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "mission05-18"
+            {
+                 FLAGS 0x00000000
+                 ID 18
+                 POS 16 270
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 3="MENU 2 " 9 13="mission_bar_blink" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 200 300 0 -1 -1
+            }
+        }
+        LAYER DUMMY "missions text-11"
+        {
+            FLAGS 0x00000000
+            ID 11
+            POS 0 0
+            LAYER OBJECT_LAYER "mission_text_01-13"
+            {
+                 FLAGS 0x00000000
+                 ID 13
+                 POS 46 154
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 179 19 0="Font Small" -1 1="Center" 1="Center" 0="FALSE" 0 300 0 -1 -1 -1 0
+            }
+            LAYER OBJECT_LAYER "mission_text_01-19"
+            {
+                 FLAGS 0x00000000
+                 ID 19
+                 POS 46 183
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 179 19 0="Font Small" -1 1="Center" 1="Center" 0="FALSE" 50 300 0 -1 -1 -1 0
+            }
+            LAYER OBJECT_LAYER "mission_text_01-20"
+            {
+                 FLAGS 0x00000000
+                 ID 20
+                 POS 46 212
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 179 19 0="Font Small" -1 1="Center" 1="Center" 0="FALSE" 100 300 0 -1 -1 -1 0
+            }
+            LAYER OBJECT_LAYER "mission_text_01-21"
+            {
+                 FLAGS 0x00000000
+                 ID 21
+                 POS 46 241
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 179 20 0="Font Small" -1 1="Center" 1="Center" 0="FALSE" 150 300 0 -1 -1 -1 0
+            }
+            LAYER OBJECT_LAYER "mission_text_01-22"
+            {
+                 FLAGS 0x00000000
+                 ID 22
+                 POS 46 270
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 179 19 0="Font Small" -1 1="Center" 1="Center" 0="FALSE" 200 300 0 -1 -1 -1 0
+            }
+        }
+        LAYER DUMMY "mission icon-24"
+        {
+            FLAGS 0x00000000
+            ID 24
+            POS 0 0
+            LAYER OBJECT_LAYER "icon01-9"
+            {
+                 FLAGS 0x00000000
+                 ID 9
+                 POS 33 163
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 76="mission_unusable" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 77
+            }
+            LAYER OBJECT_LAYER "icon02-10"
+            {
+                 FLAGS 0x00000000
+                 ID 10
+                 POS 33 191
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 76="mission_unusable" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 50 300 0 -1 77
+            }
+            LAYER OBJECT_LAYER "icon03-25"
+            {
+                 FLAGS 0x00000000
+                 ID 25
+                 POS 33 220
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 76="mission_unusable" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 100 300 0 -1 77
+            }
+            LAYER OBJECT_LAYER "icon04-26"
+            {
+                 FLAGS 0x00000000
+                 ID 26
+                 POS 33 249
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 76="mission_unusable" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 150 300 0 -1 77
+            }
+            LAYER OBJECT_LAYER "icon05-27"
+            {
+                 FLAGS 0x00000000
+                 ID 27
+                 POS 33 278
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 76="mission_unusable" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 200 300 0 -1 77
+            }
+        }
+        LAYER LEVEL "other_gfx-31"
+        {
+            FLAGS 0x00000000
+            ID 31
+            POS 0 0
+            LAYER OBJECT_LAYER "baner-1"
+            {
+                 FLAGS 0x00000000
+                 ID 1
+                 POS 0 0
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 101="new_baner" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "city_name-2"
+            {
+                 FLAGS 0x00000000
+                 ID 2
+                 POS 0 0
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 106="city_name" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 -300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "GUI_GfxItem-17"
+            {
+                 FLAGS 0x00000000
+                 ID 17
+                 POS 120 143
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_GfxItem"
+                 PARAMS 1="MENU_CURSOR" -1 40="guild_arrow_up_idle" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1
+            }
+            LAYER OBJECT_LAYER "GUI_GfxItem-3"
+            {
+                 FLAGS 0x00000000
+                 ID 3
+                 POS 120 299
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_GfxItem"
+                 PARAMS 1="MENU_CURSOR" -1 42="guild_arrow_down_idle" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1
+            }
+        }
+    }
+
+    LEVEL "guild_teammate_select"
+    {
+        FLAGS 0x00000000
+        ID 5
+        POS 0 0
+        LAYER DUMMY "background_gfx-6"
+        {
+            FLAGS 0x00000000
+            ID 6
+            POS 0 0
+            LAYER OBJECT_LAYER "GUI_NewGfxItem-31"
+            {
+                 FLAGS 0x00000000
+                 ID 31
+                 POS 0 0
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 51="screen_select_teammate" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1 -1
+            }
+        }
+        LAYER DUMMY "background_text-2"
+        {
+            FLAGS 0x00000000
+            ID 2
+            POS 0 0
+            LAYER OBJECT_LAYER "mission_name-1"
+            {
+                 FLAGS 0x00000000
+                 ID 1
+                 POS 2 0
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 170 20 0="Font Small" -1 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 -6="choose place"
+            }
+            LAYER OBJECT_LAYER "DIFFICULTY-4"
+            {
+                 FLAGS 0x00000000
+                 ID 4
+                 POS 0 89
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 107 23 0="Font Small" -1 1="Center" 1="Center" 0="FALSE" 0 -300 0 -1 -1 -1 137
+            }
+            LAYER OBJECT_LAYER "REWARDS-7"
+            {
+                 FLAGS 0x00000000
+                 ID 7
+                 POS 136 88
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 107 23 0="Font Small" -1 1="Center" 1="Center" 0="FALSE" 0 300 0 -1 -1 -1 138
+            }
+            LAYER OBJECT_LAYER "reward_exp-37"
+            {
+                 FLAGS 0x00000000
+                 ID 37
+                 POS 137 110
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 103 23 0="Font Small" 2 1="Center" 1="Center" 0="FALSE" 0 300 0 -1 -1 -1 -7="mission reward exp"
+            }
+            LAYER OBJECT_LAYER "percent-9"
+            {
+                 FLAGS 0x00000000
+                 ID 9
+                 POS 183 140
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 42 28 0="Font Small" 2 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 -3="Success rate "
+            }
+            LAYER OBJECT_LAYER "xp to next level-10"
+            {
+                 FLAGS 0x00000000
+                 ID 10
+                 POS 30 291
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 172 16 0="Font Small" 2 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 -4="level up to next level"
+            }
+        }
+        LAYER DUMMY "diffculty-13"
+        {
+            FLAGS 0x00000000
+            ID 13
+            POS 0 0
+            LAYER OBJECT_LAYER "diffculty icon-32"
+            {
+                 FLAGS 0x00000000
+                 ID 32
+                 POS 6 112
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 78="diffculty_icon" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 -300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "diffculty icon-33"
+            {
+                 FLAGS 0x00000000
+                 ID 33
+                 POS 25 112
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 78="diffculty_icon" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 -300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "diffculty icon-34"
+            {
+                 FLAGS 0x00000000
+                 ID 34
+                 POS 44 112
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 78="diffculty_icon" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 -300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "diffculty icon-35"
+            {
+                 FLAGS 0x00000000
+                 ID 35
+                 POS 63 112
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 78="diffculty_icon" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 -300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "diffculty icon-36"
+            {
+                 FLAGS 0x00000000
+                 ID 36
+                 POS 80 112
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 78="diffculty_icon" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 -300 0 -1 -1
+            }
+        }
+        LAYER DUMMY "middle_mate_logo-19"
+        {
+            FLAGS 0x00000000
+            ID 19
+            POS 0 0
+            LAYER OBJECT_LAYER "middle_mate_logo-20"
+            {
+                 FLAGS 0x00000000
+                 ID 20
+                 POS 27 176
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 79="middle_mate_logo_unselect" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 80
+            }
+            LAYER OBJECT_LAYER "middle_mate_logo-12"
+            {
+                 FLAGS 0x00000000
+                 ID 12
+                 POS 69 176
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 79="middle_mate_logo_unselect" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 80
+            }
+            LAYER OBJECT_LAYER "middle_mate_logo-21"
+            {
+                 FLAGS 0x00000000
+                 ID 21
+                 POS 107 176
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 79="middle_mate_logo_unselect" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 80
+            }
+            LAYER OBJECT_LAYER "middle_mate_logo-22"
+            {
+                 FLAGS 0x00000000
+                 ID 22
+                 POS 144 176
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 79="middle_mate_logo_unselect" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 80
+            }
+            LAYER OBJECT_LAYER "middle_mate_logo-23"
+            {
+                 FLAGS 0x00000000
+                 ID 23
+                 POS 183 176
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 79="middle_mate_logo_unselect" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 80
+            }
+        }
+        LAYER DUMMY "bottom_mate_logo-24"
+        {
+            FLAGS 0x00000000
+            ID 24
+            POS 0 0
+            LAYER OBJECT_LAYER "bottom_mate_logo-25"
+            {
+                 FLAGS 0x00000000
+                 ID 25
+                 POS 27 240
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 81="bottom_mate_logo_unselect" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 82
+            }
+            LAYER OBJECT_LAYER "bottom_mate_logo-26"
+            {
+                 FLAGS 0x00000000
+                 ID 26
+                 POS 69 240
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 81="bottom_mate_logo_unselect" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 82
+            }
+            LAYER OBJECT_LAYER "bottom_mate_logo-27"
+            {
+                 FLAGS 0x00000000
+                 ID 27
+                 POS 107 240
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 81="bottom_mate_logo_unselect" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 82
+            }
+            LAYER OBJECT_LAYER "bottom_mate_logo-28"
+            {
+                 FLAGS 0x00000000
+                 ID 28
+                 POS 144 240
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 81="bottom_mate_logo_unselect" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 82
+            }
+            LAYER OBJECT_LAYER "bottom_mate_logo-29"
+            {
+                 FLAGS 0x00000000
+                 ID 29
+                 POS 183 240
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 81="bottom_mate_logo_unselect" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 82
+            }
+        }
+        LAYER DUMMY "other_gfx-38"
+        {
+            FLAGS 0x00000000
+            ID 38
+            POS 0 0
+            LAYER OBJECT_LAYER "diffculty-40"
+            {
+                 FLAGS 0x00000000
+                 ID 40
+                 POS 0 0
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 102="diffculty" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 -300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "reward-3"
+            {
+                 FLAGS 0x00000000
+                 ID 3
+                 POS 137 0
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 103="reward" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "baner-39"
+            {
+                 FLAGS 0x00000000
+                 ID 39
+                 POS 0 0
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 101="new_baner" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "teammate_xp_bar-14"
+            {
+                 FLAGS 0x00000000
+                 ID 14
+                 POS 22 280
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 107 -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "SUCCESSFUL RATE-8"
+            {
+                 FLAGS 0x00000000
+                 ID 8
+                 POS 21 147
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 162 29 0="Font Small" -1 0="Left" 0="Top" 0="FALSE" 0 0 0 -1 -1 -1 140
+            }
+            LAYER OBJECT_LAYER "ASSASSIN SIGNAL-11"
+            {
+                 FLAGS 0x00000000
+                 ID 11
+                 POS 6 213
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 171 21 1="Font Big" -1 0="Left" 0="Top" 0="FALSE" 0 0 0 -1 -1 -1 143
+            }
+        }
+    }
+
+    LEVEL "IGM"
+    {
+        FLAGS 0x00000000
+        ID 11
+        POS 0 0
+        LAYER LEVEL "Menu-12"
+        {
+            FLAGS 0x00000000
+            ID 12
+            POS 0 0
+            LAYER OBJECT_LAYER "GUI_Custom_Menu-9"
+            {
+                 FLAGS 0x00000000
+                 ID 9
+                 POS 234 207
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_Custom_Menu"
+                 PARAMS 1="TRUE"
+            }
+        }
+        LAYER LEVEL "Menu items-10"
+        {
+            FLAGS 0x00000000
+            ID 10
+            POS 0 0
+            LAYER OBJECT_LAYER "Menu Item 1-15"
+            {
+                 FLAGS 0x00000000
+                 ID 15
+                 POS 45 111
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 1="MENU_CURSOR" 18="text_button_empty" 19="text_button_blink" 1="1_out" 0 1 2 3 1="Font Big" -1 2 2 3
+            }
+            LAYER OBJECT_LAYER "Text Item 1-16"
+            {
+                 FLAGS 0x00000000
+                 ID 16
+                 POS 37 110
+                 ANCHOR 13 0
+                 TEMPLATE "GUI_TextItem"
+                 PARAMS 165 22 1="Font Big" 5 1="Center" 1="Center" 0="FALSE" 0 0 0
+            }
+            LAYER OBJECT_LAYER "Menu Item 1-13"
+            {
+                 FLAGS 0x00000000
+                 ID 13
+                 POS 45 147
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 1="MENU_CURSOR" 18="text_button_empty" 19="text_button_blink" 1="1_out" 0 1 2 3 1="Font Big" -1 2 2 3
+            }
+            LAYER OBJECT_LAYER "Text Item 1-14"
+            {
+                 FLAGS 0x00000000
+                 ID 14
+                 POS 37 146
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_TextItem"
+                 PARAMS 165 22 1="Font Big" 5 1="Center" 1="Center" 0="FALSE" 0 0 0
+            }
+            LAYER OBJECT_LAYER "Menu Item 1-3"
+            {
+                 FLAGS 0x00000000
+                 ID 3
+                 POS 45 182
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 1="MENU_CURSOR" 18="text_button_empty" 19="text_button_blink" 1="1_out" 0 1 2 3 1="Font Big" -1 2 2 3
+            }
+            LAYER OBJECT_LAYER "Text Item 1-4"
+            {
+                 FLAGS 0x00000000
+                 ID 4
+                 POS 37 181
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_TextItem"
+                 PARAMS 165 22 1="Font Big" 5 1="Center" 1="Center" 0="FALSE" 0 0 0
+            }
+            LAYER OBJECT_LAYER "Menu Item 1-1"
+            {
+                 FLAGS 0x00000000
+                 ID 1
+                 POS 45 217
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 1="MENU_CURSOR" 18="text_button_empty" 19="text_button_blink" 1="1_out" 0 1 2 3 1="Font Big" -1 2 2 3
+            }
+            LAYER OBJECT_LAYER "Text Item 1-2"
+            {
+                 FLAGS 0x00000000
+                 ID 2
+                 POS 37 216
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_TextItem"
+                 PARAMS 165 22 1="Font Big" 5 1="Center" 1="Center" 0="FALSE" 0 0 0
+            }
+            LAYER OBJECT_LAYER "Menu Item 1-7"
+            {
+                 FLAGS 0x00000000
+                 ID 7
+                 POS 45 252
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_MenuItem"
+                 PARAMS 1="MENU_CURSOR" 18="text_button_empty" 19="text_button_blink" 1="1_out" 0 1 2 3 1="Font Big" -1 2 2 3
+            }
+            LAYER OBJECT_LAYER "Text Item 1-8"
+            {
+                 FLAGS 0x00000000
+                 ID 8
+                 POS 37 251
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_TextItem"
+                 PARAMS 165 22 1="Font Big" 5 1="Center" 1="Center" 0="FALSE" 0 0 0
+            }
+            LAYER OBJECT_LAYER "GUI_GfxItem-5"
+            {
+                 FLAGS 0x00000000
+                 ID 5
+                 POS 106 90
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_GfxItem"
+                 PARAMS 1="MENU_CURSOR" -1 26="arrow_up" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1
+            }
+            LAYER OBJECT_LAYER "GUI_GfxItem-6"
+            {
+                 FLAGS 0x00000000
+                 ID 6
+                 POS 106 296
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_GfxItem"
+                 PARAMS 1="MENU_CURSOR" -1 28="arrow_down" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1
+            }
+        }
+    }
+
+    LEVEL "ENGAGING"
+    {
+        FLAGS 0x00000000
+        ID 11
+        POS 0 0
+        LAYER DUMMY "text-9"
+        {
+            FLAGS 0x00000000
+            ID 9
+            POS 0 0
+            LAYER OBJECT_LAYER "GUI_NewTextItem-10"
+            {
+                 FLAGS 0x00000000
+                 ID 10
+                 POS 29 148
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 182 41 0="Font Small" 2 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 -8="loading bar mission"
+            }
+        }
+        LAYER DUMMY "mate_logo-5"
+        {
+            FLAGS 0x00000000
+            ID 5
+            POS 16 0
+            LAYER OBJECT_LAYER "middle_mate_logo-4"
+            {
+                 FLAGS 0x00000000
+                 ID 4
+                 POS 27 253
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 79="middle_mate_logo_unselect" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 80 0 -1 80
+            }
+            LAYER OBJECT_LAYER "middle_mate_logo-6"
+            {
+                 FLAGS 0x00000000
+                 ID 6
+                 POS 69 253
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 79="middle_mate_logo_unselect" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 38 0 -1 80
+            }
+            LAYER OBJECT_LAYER "middle_mate_logo-2"
+            {
+                 FLAGS 0x00000000
+                 ID 2
+                 POS 107 253
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 79="middle_mate_logo_unselect" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1 80
+            }
+            LAYER OBJECT_LAYER "middle_mate_logo-1"
+            {
+                 FLAGS 0x00000000
+                 ID 1
+                 POS 144 253
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 79="middle_mate_logo_unselect" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 -37 0 -1 80
+            }
+            LAYER OBJECT_LAYER "middle_mate_logo-3"
+            {
+                 FLAGS 0x00000000
+                 ID 3
+                 POS 183 253
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 79="middle_mate_logo_unselect" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 -76 0 -1 80
+            }
+        }
+        LAYER DUMMY "gfx-7"
+        {
+            FLAGS 0x00000000
+            ID 7
+            POS 0 0
+            LAYER OBJECT_LAYER "bar-8"
+            {
+                 FLAGS 0x00000000
+                 ID 8
+                 POS 16 189
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 3="MENU 2 " 45="engage_bar_bg" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "success-12"
+            {
+                 FLAGS 0x00000000
+                 ID 12
+                 POS 55 228
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 5="MISSION_SUCCESS" 0 -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "faild-13"
+            {
+                 FLAGS 0x00000000
+                 ID 13
+                 POS 55 228
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 4="MISSINON_FAILED" 0 -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 -1
+            }
+        }
+    }
+
+    LEVEL "MISSION_CLEAR"
+    {
+        FLAGS 0x00000000
+        ID 10
+        POS 0 0
+        LAYER DUMMY "gfx-8"
+        {
+            FLAGS 0x00000000
+            ID 8
+            POS 0 0
+            LAYER OBJECT_LAYER "BG-9"
+            {
+                 FLAGS 0x00000000
+                 ID 9
+                 POS 0 0
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 121="screen_select_city" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "red_Bar-11"
+            {
+                 FLAGS 0x00000000
+                 ID 11
+                 POS 0 72
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 1="MENU_CURSOR" 122="mission_clear_red_bar" -1 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1 -1
+            }
+        }
+        LAYER DUMMY "missions gfx-5"
+        {
+            FLAGS 0x00000000
+            ID 5
+            POS 16 0
+            LAYER OBJECT_LAYER "mission01-4"
+            {
+                 FLAGS 0x00000000
+                 ID 4
+                 POS 12 112
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 3="MENU 2 " 9 13="mission_bar_blink" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "mission02-6"
+            {
+                 FLAGS 0x00000000
+                 ID 6
+                 POS 12 139
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 3="MENU 2 " 9 13="mission_bar_blink" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 50 300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "mission03-2"
+            {
+                 FLAGS 0x00000000
+                 ID 2
+                 POS 12 166
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 3="MENU 2 " 9 13="mission_bar_blink" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 100 300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "mission04-13"
+            {
+                 FLAGS 0x00000000
+                 ID 13
+                 POS 12 193
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 3="MENU 2 " 9 13="mission_bar_blink" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 150 300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "mission05-3"
+            {
+                 FLAGS 0x00000000
+                 ID 3
+                 POS 11 220
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 3="MENU 2 " 9 13="mission_bar_blink" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 200 300 0 -1 -1
+            }
+            LAYER OBJECT_LAYER "mission06-7"
+            {
+                 FLAGS 0x00000000
+                 ID 7
+                 POS 11 247
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewGfxItem"
+                 PARAMS 3="MENU 2 " 9 13="mission_bar_blink" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 250 300 0 -1 -1
+            }
+        }
+        LAYER DUMMY "text-12"
+        {
+            FLAGS 0x00000000
+            ID 12
+            POS 0 0
+            LAYER OBJECT_LAYER "Title_level_cleared-1"
+            {
+                 FLAGS 0x00000000
+                 ID 1
+                 POS 1 74
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 239 29 2="Font Huge" 0 1="Center" 1="Center" 0="FALSE" 0 300 0 -1 -1 -1 153
+            }
+            LAYER OBJECT_LAYER "enenmy_killed-16"
+            {
+                 FLAGS 0x00000000
+                 ID 16
+                 POS 25 112
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 190 19 0="Font Small" 0 2="Right" 1="Center" 0="FALSE" 0 300 0 -1 -1 -1 -11="enemy killed"
+            }
+            LAYER OBJECT_LAYER "enenmy_killed_text-20"
+            {
+                 FLAGS 0x00000000
+                 ID 20
+                 POS 26 113
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 190 19 0="Font Small" 0 0="Left" 1="Center" 0="FALSE" 0 300 0 -1 -1 -1 80
+            }
+            LAYER OBJECT_LAYER "retries-15"
+            {
+                 FLAGS 0x00000000
+                 ID 15
+                 POS 25 140
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 190 19 0="Font Small" 0 2="Right" 1="Center" 0="FALSE" 50 300 0 -1 -1 -1 -10="retry time"
+            }
+            LAYER OBJECT_LAYER "retries_text-21"
+            {
+                 FLAGS 0x00000000
+                 ID 21
+                 POS 26 140
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 190 19 0="Font Small" 0 0="Left" 1="Center" 0="FALSE" 50 300 0 -1 -1 -1 81
+            }
+            LAYER OBJECT_LAYER "assassins_rescued-14"
+            {
+                 FLAGS 0x00000000
+                 ID 14
+                 POS 25 166
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 190 19 0="Font Small" 0 2="Right" 1="Center" 0="FALSE" 100 300 0 -1 -1 -1 -9="assassinate rescued"
+            }
+            LAYER OBJECT_LAYER "assassins_rescued_text-22"
+            {
+                 FLAGS 0x00000000
+                 ID 22
+                 POS 25 166
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 190 19 0="Font Small" 0 0="Left" 1="Center" 0="FALSE" 100 300 0 -1 -1 -1 154
+            }
+            LAYER OBJECT_LAYER "bonus-17"
+            {
+                 FLAGS 0x00000000
+                 ID 17
+                 POS 25 194
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 190 19 0="Font Small" 0 2="Right" 1="Center" 0="FALSE" 150 300 0 -1 -1 -1 -12="bonus"
+            }
+            LAYER OBJECT_LAYER "bonus_text-23"
+            {
+                 FLAGS 0x00000000
+                 ID 23
+                 POS 25 194
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 190 19 0="Font Small" 0 0="Left" 1="Center" 0="FALSE" 150 300 0 -1 -1 -1 79
+            }
+            LAYER OBJECT_LAYER "time-18"
+            {
+                 FLAGS 0x00000000
+                 ID 18
+                 POS 25 221
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 190 19 0="Font Small" 0 2="Right" 1="Center" 0="FALSE" 200 300 0 -1 -1 -1 -13="level clear time"
+            }
+            LAYER OBJECT_LAYER "time_text-24"
+            {
+                 FLAGS 0x00000000
+                 ID 24
+                 POS 26 221
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 190 19 0="Font Small" 0 0="Left" 1="Center" 0="FALSE" 200 300 0 -1 -1 -1 155
+            }
+            LAYER OBJECT_LAYER "score-19"
+            {
+                 FLAGS 0x00000000
+                 ID 19
+                 POS 25 248
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 190 19 0="Font Small" 0 2="Right" 1="Center" 0="FALSE" 250 300 0 -1 -1 -1 -14="level clear score"
+            }
+            LAYER OBJECT_LAYER "score_text-25"
+            {
+                 FLAGS 0x00000000
+                 ID 25
+                 POS 24 248
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 190 19 0="Font Small" 0 0="Left" 1="Center" 0="FALSE" 250 300 0 -1 -1 -1 101
+            }
+        }
+    }
+
+    LEVEL "HELP"
+    {
+        FLAGS 0x00000000
+        ID 3
+        POS 0 0
+        LAYER OBJECT_LAYER "black_rect-2"
+        {
+             FLAGS 0x00000000
+             ID 2
+             POS 0 0
+             ANCHOR 0 0
+             TEMPLATE "GUI_FillRect"
+             PARAMS 240 60 204 0 0 0 1="TRUE" 0="FALSE"
+        }
+        LAYER OBJECT_LAYER "black_rect-4"
+        {
+             FLAGS 0x00000000
+             ID 4
+             POS 0 260
+             ANCHOR 0 0
+             TEMPLATE "GUI_FillRect"
+             PARAMS 240 60 204 0 0 0 1="TRUE" 0="FALSE"
+        }
+        LAYER OBJECT_LAYER "gray_rect-5"
+        {
+             FLAGS 0x00000000
+             ID 5
+             POS 0 60
+             ANCHOR 0 0
+             TEMPLATE "GUI_FillRect"
+             PARAMS 240 200 204 28 28 28 1="TRUE" 0="FALSE"
+        }
+        LAYER OBJECT_LAYER "write_line-1"
+        {
+             FLAGS 0x00000000
+             ID 1
+             POS 0 60
+             ANCHOR 0 0
+             TEMPLATE "GUI_FillRect"
+             PARAMS 240 1 255 255 255 255 1="TRUE" 0="FALSE"
+        }
+        LAYER OBJECT_LAYER "write_line-7"
+        {
+             FLAGS 0x00000000
+             ID 7
+             POS 0 260
+             ANCHOR 0 0
+             TEMPLATE "GUI_FillRect"
+             PARAMS 240 1 255 255 255 255 1="TRUE" 0="FALSE"
+        }
+        LAYER OBJECT_LAYER "help_text-8"
+        {
+             FLAGS 0x00000000
+             ID 8
+             POS 14 73
+             ANCHOR 0 0
+             TEMPLATE "GUI_NewTextItem"
+             PARAMS 212 176 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 0
+        }
+        LAYER OBJECT_LAYER "help_title_HINTS-9"
+        {
+             FLAGS 0x00000000
+             ID 9
+             POS 47 24
+             ANCHOR 0 0
+             TEMPLATE "GUI_NewTextItem"
+             PARAMS 147 28 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 149
+        }
+        LAYER OBJECT_LAYER "help_title_CONTROL-10"
+        {
+             FLAGS 0x00000000
+             ID 10
+             POS 47 24
+             ANCHOR 0 0
+             TEMPLATE "GUI_NewTextItem"
+             PARAMS 147 28 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 73
+        }
+        LAYER OBJECT_LAYER "page_number-6"
+        {
+             FLAGS 0x00000000
+             ID 6
+             POS 96 262
+             ANCHOR 0 0
+             TEMPLATE "GUI_NewTextItem"
+             PARAMS 43 25 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 0
+        }
+        LAYER OBJECT_LAYER "GUI_GfxItem-12"
+        {
+             FLAGS 0x00000000
+             ID 12
+             POS 91 261
+             ANCHOR 0 0
+             TEMPLATE "GUI_GfxItem"
+             PARAMS 1="MENU_CURSOR" -1 35="L" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1
+        }
+        LAYER OBJECT_LAYER "GUI_GfxItem-11"
+        {
+             FLAGS 0x00000000
+             ID 11
+             POS 117 261
+             ANCHOR 0 0
+             TEMPLATE "GUI_GfxItem"
+             PARAMS 1="MENU_CURSOR" -1 36="R" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1
+        }
+    }
+
+    LEVEL "HIGH_SCORE"
+    {
+        FLAGS 0x00000000
+        ID 9
+        POS 0 0
+        LAYER OBJECT_LAYER "black_rect-7"
+        {
+             FLAGS 0x00000000
+             ID 7
+             POS 0 0
+             ANCHOR 0 0
+             TEMPLATE "GUI_FillRect"
+             PARAMS 240 49 204 0 0 0 1="TRUE" 0="FALSE"
+        }
+        LAYER OBJECT_LAYER "black_rect-8"
+        {
+             FLAGS 0x00000000
+             ID 8
+             POS 0 288
+             ANCHOR 0 0
+             TEMPLATE "GUI_FillRect"
+             PARAMS 240 32 204 0 0 0 1="TRUE" 0="FALSE"
+        }
+        LAYER OBJECT_LAYER "gray_rect-12"
+        {
+             FLAGS 0x00000000
+             ID 12
+             POS 0 50
+             ANCHOR 0 0
+             TEMPLATE "GUI_FillRect"
+             PARAMS 240 237 204 28 28 28 1="TRUE" 0="FALSE"
+        }
+        LAYER OBJECT_LAYER "write_line-10"
+        {
+             FLAGS 0x00000000
+             ID 10
+             POS 0 49
+             ANCHOR 0 0
+             TEMPLATE "GUI_FillRect"
+             PARAMS 240 1 255 255 255 255 1="TRUE" 0="FALSE"
+        }
+        LAYER OBJECT_LAYER "write_line-11"
+        {
+             FLAGS 0x00000000
+             ID 11
+             POS 0 287
+             ANCHOR 0 0
+             TEMPLATE "GUI_FillRect"
+             PARAMS 240 1 255 255 255 255 1="TRUE" 0="FALSE"
+        }
+        LAYER OBJECT_LAYER "diffcuclt_select-6"
+        {
+             FLAGS 0x00000000
+             ID 6
+             POS 75 11
+             ANCHOR 0 0
+             TEMPLATE "GUI_NewTextItem"
+             PARAMS 98 32 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 0
+        }
+        LAYER OBJECT_LAYER "GUI_GfxItem-4"
+        {
+             FLAGS 0x00000000
+             ID 4
+             POS 70 14
+             ANCHOR 0 0
+             TEMPLATE "GUI_GfxItem"
+             PARAMS 1="MENU_CURSOR" -1 35="L" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1
+        }
+        LAYER OBJECT_LAYER "GUI_GfxItem-5"
+        {
+             FLAGS 0x00000000
+             ID 5
+             POS 150 14
+             ANCHOR 0 0
+             TEMPLATE "GUI_GfxItem"
+             PARAMS 1="MENU_CURSOR" -1 36="R" 0 1="TRUE" 1="TRUE" 0="FALSE" 0 0 0 0 0 -1
+        }
+        LAYER DUMMY "table-13"
+        {
+            FLAGS 0x00000000
+            ID 13
+            POS 0 10
+            LAYER OBJECT_LAYER "LEVEL-18"
+            {
+                 FLAGS 0x00000000
+                 ID 18
+                 POS 5 59
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 105 18 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 34
+            }
+            LAYER OBJECT_LAYER "SCORE-20"
+            {
+                 FLAGS 0x00000000
+                 ID 20
+                 POS 115 59
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 60 18 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 133
+            }
+            LAYER OBJECT_LAYER "RANK-21"
+            {
+                 FLAGS 0x00000000
+                 ID 21
+                 POS 185 59
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 50 18 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 133
+            }
+            LAYER OBJECT_LAYER "level01-1"
+            {
+                 FLAGS 0x00000000
+                 ID 1
+                 POS 5 82
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 105 18 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 55
+            }
+            LAYER OBJECT_LAYER "level02-2"
+            {
+                 FLAGS 0x00000000
+                 ID 2
+                 POS 5 105
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 105 18 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 56
+            }
+            LAYER OBJECT_LAYER "level03-3"
+            {
+                 FLAGS 0x00000000
+                 ID 3
+                 POS 5 127
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 105 18 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 56
+            }
+            LAYER OBJECT_LAYER "level04-14"
+            {
+                 FLAGS 0x00000000
+                 ID 14
+                 POS 5 150
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 105 18 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 57
+            }
+            LAYER OBJECT_LAYER "level05-15"
+            {
+                 FLAGS 0x00000000
+                 ID 15
+                 POS 5 172
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 105 18 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 58
+            }
+            LAYER OBJECT_LAYER "level06-16"
+            {
+                 FLAGS 0x00000000
+                 ID 16
+                 POS 5 195
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 105 18 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 59
+            }
+            LAYER OBJECT_LAYER "level07-17"
+            {
+                 FLAGS 0x00000000
+                 ID 17
+                 POS 5 218
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 105 18 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 59
+            }
+            LAYER OBJECT_LAYER "level08-19"
+            {
+                 FLAGS 0x00000000
+                 ID 19
+                 POS 5 241
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 105 18 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 61
+            }
+            LAYER OBJECT_LAYER "level09-22"
+            {
+                 FLAGS 0x00000000
+                 ID 22
+                 POS 5 264
+                 ANCHOR 0 0
+                 TEMPLATE "GUI_NewTextItem"
+                 PARAMS 105 18 0="Font Small" 0 1="Center" 1="Center" 0="FALSE" 0 0 0 -1 -1 -1 62
+            }
+        }
+    }
+}
